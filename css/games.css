@@ -1,0 +1,7 @@
+@media (min-width: 992px) {
+
+	.games-page,
+	.games-page .container {
+		max-width: 100% !important;
+	}
+}

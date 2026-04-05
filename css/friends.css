@@ -1,0 +1,15 @@
+.btr-hover-icon {
+	float: right;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	background-image: url("/img/generic.svg");
+	background-repeat: no-repeat;
+	background-position: 0px -616px;
+	background-size: 200%;
+	transition: background-position 0.15s ease;
+}
+
+	.btr-hover-icon:hover {
+		background-position: -30px -616px;
+	}
