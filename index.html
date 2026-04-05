@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTKorone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lumen/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #fff4dc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('https://cdn.discordapp.com/attachments/1488405305887817818/1488764155744882819/uncaption.gif') center/cover no-repeat;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-main {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #f4c542;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: 0.2s;
+    }
+
+    .btn-main:hover {
+      background: #e34b4b;
+      color: #fff;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .card {
+      background: #2a1a12;
+      border: none;
+      color: #fff4dc;
+      border-radius: 12px;
+    }
+
+    .card h4 {
+      color: #f4c542;
+    }
+
+    a {
+      color: #6ec1e4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #e34b4b;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 class="display-4">BTKorone</h1>
+    <p>BTRoblox, built for Korone.</p>
+    <button class="btn-main" onclick="scrollToSection()">learn more</button>
+  </div>
+</div>
+
+<div id="about" class="section container text-center">
+  <h2>what is BTKorone?</h2>
+  <p>BTKorone enhances Korone with modern ui tweaks, improved navigation, and quality-of-life features.</p>
+</div>
+
+<div class="section container">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-4 text-center">
+        <h4>ui improvements</h4>
+        <p>styling, & better navigation</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 text-center">
+        <h4>performance</h4>
+        <p>optimized scripts for smoother browsing.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 text-center">
+        <h4>customization</h4>
+        <p>change themes and tweak your experience.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section text-center">
+  <h2>Download</h2>
+  <p>Get BTKorone and upgrade your revival experience.</p>
+  <a href="/btkorone.zip" class="btn btn-main">Download Now</a>
+</div>
+
+<script>
+function scrollToSection() {
+  document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
